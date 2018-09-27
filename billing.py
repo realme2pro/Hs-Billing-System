@@ -3,12 +3,12 @@ import random
 import time
 import datetime
 
-width = 1350
-height = 650
+width = 1850
+height = 750
 
 root = Tk()
 root.geometry(str(width)+"x" + str(height) + "+0+0")
-root.title("Billing Systems")
+root.title("Hs Billing Systems")
 
 Tops = Frame(root, width=width, height=100, bd=8,relief='raise')
 Tops.pack(side=TOP)
@@ -34,7 +34,7 @@ f2aa.pack(side=LEFT)
 f2ab = Frame(f2a, width=450, height=330, bd=8,relief='raise')
 f2ab.pack(side=LEFT)
 
-lblInfo=Label(Tops, font=('arial',60,'bold'),text ="Billng systems", bd=10,anchor='w')
+lblInfo=Label(Tops, font=('arial',60,'bold'),text ="Hs Billing systems", bd=10,anchor='w')
 lblInfo.grid(row=0,column=0)
 
 #============
@@ -90,50 +90,50 @@ btnDiv = Button(f2,padx=16,pady=16,bd=8,fg='black',font=('arial',20,'bold'),text
 # ORDER's INFO
 #==============
 PaymentRef=StringVar()
-Carpets=StringVar()
-Fabric=StringVar()
-Blinds=StringVar()
-HomeDelivery=StringVar()
+Realme2Pro=StringVar()
+Pizza=StringVar()
+Mac=StringVar()
+MyHomeDelivery=StringVar()
 
-Carpets.set(0)
-Fabric.set(0)
-Blinds.set(0)
-HomeDelivery.set(0)
+Realme2Pro.set(17990)
+Pizza.set(0)
+Mac.set(0)
+MyHomeDelivery.set(0)
 
 lblRef = Label(f1aa,font=('arial',16,'bold'),text='Sales Reference',bd=16,justify='left')
 lblRef.grid(row=0,column=0)
 txtRef=Entry(f1aa,font=('arial',16,'bold'),textvariable=PaymentRef,bd=10,insertwidth=2,justify='left')
 txtRef.grid(row=0,column=1)
 
-lblCarpets = Label(f1aa,font=('arial',16,'bold'),text='Carpets',bd=16,justify='left')
-lblCarpets.grid(row=1,column=0)
-txtCarpets=Entry(f1aa,font=('arial',16,'bold'),textvariable=Carpets,bd=10,insertwidth=2,justify='left')
-txtCarpets.grid(row=1,column=1)
+lblRealme2Pro = Label(f1aa,font=('arial',16,'bold'),text='Realme2Pro',bd=16,justify='left')
+lblRealme2Pro.grid(row=1,column=0)
+txtRealme2Pro=Entry(f1aa,font=('arial',16,'bold'),textvariable=Realme2Pro,bd=10,insertwidth=2,justify='left')
+txtRealme2Pro.grid(row=1,column=1)
 
-lblFabric = Label(f1aa,font=('arial',16,'bold'),text='Fabric',bd=16,justify='left')
-lblFabric.grid(row=2,column=0)
-txtFabric=Entry(f1aa,font=('arial',16,'bold'),textvariable=Fabric,bd=10,insertwidth=2,justify='left')
-txtFabric.grid(row=2,column=1)
+lblPizza = Label(f1aa,font=('arial',16,'bold'),text='Pizza',bd=16,justify='left')
+lblPizza.grid(row=2,column=0)
+txtPizza=Entry(f1aa,font=('arial',16,'bold'),textvariable=Pizza,bd=10,insertwidth=2,justify='left')
+txtPizza.grid(row=2,column=1)
 
-lblBlinds = Label(f1aa,font=('arial',16,'bold'),text='Blinds',bd=16,justify='left')
-lblBlinds.grid(row=3,column=0)
-txtBlinds=Entry(f1aa,font=('arial',16,'bold'),textvariable=Blinds,bd=10,insertwidth=2,justify='left')
-txtBlinds.grid(row=3,column=1)
+lblMac = Label(f1aa,font=('arial',16,'bold'),text='Mac',bd=16,justify='left')
+lblMac.grid(row=3,column=0)
+txtMac=Entry(f1aa,font=('arial',16,'bold'),textvariable=Mac,bd=10,insertwidth=2,justify='left')
+txtMac.grid(row=3,column=1)
 
-lblHomeDelivery= Label(f1aa,font=('arial',16,'bold'),text='Home Delivery',bd=16,justify='left')
-lblHomeDelivery.grid(row=4,column=0)
-txtHomeDelivery=Entry(f1aa,font=('arial',16,'bold'),textvariable=HomeDelivery,bd=10,insertwidth=2,justify='left')
-txtHomeDelivery.grid(row=4,column=1)
+lblMyHomeDelivery= Label(f1aa,font=('arial',16,'bold'),text='MyHome Delivery',bd=16,justify='left')
+lblMyHomeDelivery.grid(row=4,column=0)
+txtMyHomeDelivery=Entry(f1aa,font=('arial',16,'bold'),textvariable=MyHomeDelivery,bd=10,insertwidth=2,justify='left')
+txtMyHomeDelivery.grid(row=4,column=1)
 
 
 #==============
 # ORDER's COST
 #==============
 DateofOrder=StringVar()
-CostofCarpets=StringVar()
-CostofFabric=StringVar()
-CostofBlinds=StringVar()
-CostofHomeDelivery=StringVar()
+CostofRealme2Pro=StringVar()
+CostofPizza=StringVar()
+CostofMac=StringVar()
+CostofMyHomeDelivery=StringVar()
 
 DateofOrder.set(time.strftime("%d/%m/%y"))
 
@@ -142,26 +142,26 @@ lblDateofOrder.grid(row=0,column=0)
 txtDateofOrder=Entry(f1ab,font=('arial',16,'bold'),textvariable=DateofOrder,bd=10,insertwidth=2,justify='left')
 txtDateofOrder.grid(row=0,column=1)
 
-lblCostofCarpets = Label(f1ab,font=('arial',16,'bold'),text='Carpets Cost',bd=16,anchor='w')
-lblCostofCarpets.grid(row=1,column=0)
-txtCostofCarpets=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofCarpets,bd=10,insertwidth=2,justify='left')
-txtCostofCarpets.grid(row=1,column=1)
+lblCostofRealme2Pro = Label(f1ab,font=('arial',16,'bold'),text='Carpets Cost',bd=16,anchor='w')
+lblCostofRealme2Pro.grid(row=1,column=0)
+txtCostofRealme2Pro=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofRealme2Pro,bd=10,insertwidth=2,justify='left')
+txtCostofRealme2Pro.grid(row=1,column=1)
 
 
-lblCostofFabric = Label(f1ab,font=('arial',16,'bold'),text='Fabric Cost',bd=16,anchor='w')
-lblCostofFabric.grid(row=2,column=0)
-txtCostofFabric=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofFabric,bd=10,insertwidth=2,justify='left')
-txtCostofFabric.grid(row=2,column=1)
+lblCostofPizza = Label(f1ab,font=('arial',16,'bold'),text='Pizza Cost',bd=16,anchor='w')
+lblCostofPizza.grid(row=2,column=0)
+txtCostofPizza=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofPizza,bd=10,insertwidth=2,justify='left')
+txtCostofPizza.grid(row=2,column=1)
 
-lblCostofBlinds = Label(f1ab,font=('arial',16,'bold'),text='Blinds Cost',bd=16,anchor='w')
-lblCostofBlinds.grid(row=3,column=0)
-txtCostofBlinds=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofBlinds,bd=10,insertwidth=2,justify='left')
-txtCostofBlinds.grid(row=3,column=1)
+lblCostofMac = Label(f1ab,font=('arial',16,'bold'),text='Mac Cost',bd=16,anchor='w')
+lblCostofMac.grid(row=3,column=0)
+txtCostofMac=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofMac,bd=10,insertwidth=2,justify='left')
+txtCostofMac.grid(row=3,column=1)
 
-lblHomeDelivery= Label(f1ab,font=('arial',16,'bold'),text='Delivery Cost ',bd=16,anchor='w')
-lblHomeDelivery.grid(row=4,column=0)
-txtHomeDelivery=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofHomeDelivery,bd=10,insertwidth=2,justify='left')
-txtHomeDelivery.grid(row=4,column=1)
+lblMyHomeDelivery= Label(f1ab,font=('arial',16,'bold'),text='Delivery Cost ',bd=16,anchor='w')
+lblMyHomeDelivery.grid(row=4,column=0)
+txtMyHomeDelivery=Entry(f1ab,font=('arial',16,'bold'),textvariable=CostofMyHomeDelivery,bd=10,insertwidth=2,justify='left')
+txtMyHomeDelivery.grid(row=4,column=1)
 
 #=================
 # ORDER's SUMMARY
@@ -198,17 +198,17 @@ def iExit():
 
 def Reset():
 	PaymentRef.set("")
-	Carpets.set(0)
-	Fabric.set(0)
-	Blinds.set(0)
-	HomeDelivery.set(0)
+	Realme2Pro.set(17990)
+	Pizza.set()
+	Mac.set()
+	MyHomeDelivery.set(0)
 	PaidTax.set("")
 	SubTotal.set("")
 	TotalCost.set("")
-	CostofCarpets.set("")
-	CostofFabric.set("")
-	CostofBlinds.set("")
-	CostofHomeDelivery.set("")
+	CostofRealme2Pro.set("17990")
+	CostofPizza.set("0")
+	CostofMac.set("0")
+	CostofMyHomeDelivery.set("")
 
 def PayReference():
 	x = random.randint(10034,699812)
@@ -216,32 +216,32 @@ def PayReference():
 	PaymentRef.set("BILL"+randomRef)
 
 def CostOfOrder():
-	CarpetPrice = float(Carpets.get())
-	BlindsPrice = float(Blinds.get())
-	FabricPrice = float(Fabric.get())
-	DeliveryCost = float(HomeDelivery.get())
+	Realme2ProPrice = float(Realme2Pro.get())
+	PizzaPrice = float(Pizza.get())
+	MacPrice = float(Mac.get())
+	DeliveryCost = float(MyHomeDelivery.get())
 	
-	CarpetsCost = "$ " + str("%.2f"%((CarpetPrice*15.49)))
-	CostofCarpets.set(CarpetsCost)
+	Realme2ProCost = "INR " + str("%.2f"%((Realme2ProPrice*15.49)))
+	CostofRealme2Pro.set(Realme2ProCost)
 	
-	BlindsCost = "$ " + str("%.2f"%((BlindsPrice*7.49)))
-	CostofBlinds.set(BlindsCost)
+	PizzaCost = "INR " + str("%.2f"%((PizzaPrice*7.49)))
+	CostofPizza.set(PizzaCost)
 	
-	FabricCost = "$ " + str("%.2f"%((FabricPrice*5.50)))
-	CostofFabric.set(FabricCost)
+	MacCost = "INR " + str("%.2f"%((MacPrice*5.50)))
+	CostofMac.set(MacCost)
 	
-	Delivery = "$ " + str("%.2f"%((DeliveryCost*4.50)))
-	CostofHomeDelivery.set(Delivery)
+	Delivery = "INR " + str("%.2f"%((DeliveryCost*4.50)))
+	CostofMyHomeDelivery.set(Delivery)
 	
-	ToC = "$ " + str("%.2f"%((CarpetPrice*15.49)+(BlindsPrice*7.49)+(FabricPrice*5.50)+(DeliveryCost*4.50)))
+	ToC = "INR " + str("%.2f"%((Realme2ProPrice*15.49)+(PizzaPrice*7.49)+(MacPrice*5.50)+(DeliveryCost*4.50)))
 	SubTotal.set(ToC)
 	
-	Tax = "$ " + str("%.2f"%(((CarpetPrice*15.49)+(BlindsPrice*7.49)+(FabricPrice*5.50)+(DeliveryCost*4.50))*0.2))
+	Tax = "INR " + str("%.2f"%(((Realme2ProPrice*15.49)+(PizzaPrice*7.49)+(MacPrice*5.50)+(DeliveryCost*4.50))*0.2))
 	PaidTax.set(Tax)
 	
-	TaxPay = (((CarpetPrice*15.49)+(BlindsPrice*7.49)+(FabricPrice*5.50)+(DeliveryCost*4.50))*0.2)
-	Cost = (((CarpetPrice*15.49)+(BlindsPrice*7.49)+(FabricPrice*5.50)+(DeliveryCost*4.50)))
-	CostofItems = "$ " + str("%.2f"%(TaxPay+Cost))
+	TaxPay = (((Realme2ProPrice*15.49)+(PizzaPrice*7.49)+(MacPrice*5.50)+(DeliveryCost*4.50))*0.2)
+	Cost = (((Realme2ProPrice*15.49)+(PizzaPrice*7.49)+(MacPrice*5.50)+(DeliveryCost*4.50)))
+	CostofItems = "INR " + str("%.2f"%(TaxPay+Cost))
 	TotalCost.set(CostofItems)
 	
 	x=random.randint(10034,699812)
